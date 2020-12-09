@@ -10,6 +10,7 @@ import LatestValueSection from '../../components/LatestValueSection';
 
 const subscriptionClient = new SubscriptionClient(`ws://react.eogresources.com/graphql`, {
   reconnect: true,
+  timeout: 20000,
 });
 
 export const client = createClient({
